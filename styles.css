@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background: rgba(252,236,252,1);
+    background: -moz-linear-gradient(left, rgba(252,236,252,1) 0%, rgba(252,236,252,1) 24%, rgba(251,166,225,1) 58%, rgba(255,124,216,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(252,236,252,1)), color-stop(24%, rgba(252,236,252,1)), color-stop(58%, rgba(251,166,225,1)), color-stop(100%, rgba(255,124,216,1)));
+    background: -webkit-linear-gradient(left, rgba(252,236,252,1) 0%, rgba(252,236,252,1) 24%, rgba(251,166,225,1) 58%, rgba(255,124,216,1) 100%);
+    background: -o-linear-gradient(left, rgba(252,236,252,1) 0%, rgba(252,236,252,1) 24%, rgba(251,166,225,1) 58%, rgba(255,124,216,1) 100%);
+    background: -ms-linear-gradient(left, rgba(252,236,252,1) 0%, rgba(252,236,252,1) 24%, rgba(251,166,225,1) 58%, rgba(255,124,216,1) 100%);
+    background: linear-gradient(to right, rgba(252,236,252,1) 0%, rgba(252,236,252,1) 24%, rgba(251,166,225,1) 58%, rgba(255,124,216,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcecfc', endColorstr='#ff7cd8', GradientType=1 ); */
+    
+}
+h1{
+    text-align: center;
+    font-size: 1.5em;
+    margin: 1rem 0;
+}
+
+.form-register .inputs-wrap{
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    margin: 3rem auto;
+    
+}
+
+.form-register .inputs-wrap input {
+    padding: .5rem 0;
+    margin: .3rem 0;
+    border-radius: .4rem;
+}
