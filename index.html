@@ -3,22 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- estilos propios  -->
     <link rel="stylesheet" href="styles.css">
     <title>Validar Formulario de Registro</title>
 </head>
 <body>
-    <h1>Formulariod e Registro</h1>
-    <form action="" class="form-register">
+    <h1>Formulario de Registro</h1>
+    <!-- creacion del formulario -->
+    <form action="#" class="form-register">
         <div class="inputs-wrap">
-            <input type="text" name="" id="Rut">
-            <input type="text" name="" id="Nombre">
-            <input type="text" name="" id="Apellido">
-            <input type="text" name="" id="Edad">
-            <input type="email" name="" id="Correo">
-            <!-- lista despegaable  -->
+            <input type="text" name="" placeholder="Rut" id="Rut">
+            <input type="text" name="" placeholder="Nombres" id="Nombre">
+            <input type="text" name="" placeholder="Apellidos" id="Apellido">
+            <input type="text" name="" placeholder="Edad" id="Edad">
+            <input type="email" name="" placeholder="Correo" id="Correo">
+            <select name="select1" id="Select">
+                <option value="disabled select">seleccione una especialidad</option>
+                <option value="dental">DENTAL</option>
+                <option value="traumatologia">TRAUMATOLOGIA</option>
+                <option value="radiologia">RADIOLOGIA</option>
+            </select>
             <input type="date" name="" id="Fecha">
             <input type="time" value="" id="Hora">
-            <button type="submit" id="Boton">Reservar</button>
+            <button type="submit" id="Boton" onclick="return.display()">Reservar</button>
 
         </div>
     </form>

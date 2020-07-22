@@ -4,7 +4,9 @@ body {
     box-sizing: border-box;
     background-image: url('background.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
     /* background: rgba(252,236,252,1);
     background: -moz-linear-gradient(left, rgba(252,236,252,1) 0%, rgba(252,236,252,1) 24%, rgba(251,166,225,1) 58%, rgba(255,124,216,1) 100%);
     background: -webkit-gradient(left top, right top, color-stop(0%, rgba(252,236,252,1)), color-stop(24%, rgba(252,236,252,1)), color-stop(58%, rgba(251,166,225,1)), color-stop(100%, rgba(255,124,216,1)));
@@ -15,22 +17,45 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcecfc', endColorstr='#ff7cd8', GradientType=1 ); */
     
 }
+
 h1{
     text-align: center;
-    font-size: 1.5em;
-    margin: 1rem 0;
+    font-size: 2em;
+    margin: 2rem 0;
+    color: white;
 }
 
 .form-register .inputs-wrap{
     display: flex;
     flex-direction: column;
-    width: 30rem;
+    width: 25rem;
     margin: 3rem auto;
     
 }
 
-.form-register .inputs-wrap input {
-    padding: .5rem 0;
-    margin: .3rem 0;
+.form-register .inputs-wrap input, #Select {
+    padding: .6rem 0;
+    margin: .4rem 0;
     border-radius: .4rem;
+    font-size: 1.3em;
+    text-align: center;
+}
+ 
+
+#Boton {
+    font-size: .8em;
+    font-weight: bolder;
+    padding: .3rem 0;
+    border-radius: .5rem;
+    background-color: rgb(171, 226, 221);
+}
+
+
+#Boton:hover {
+    font-size: 1em;
+    background-color: #3cb9cf4b;
+    padding: .5rem 0;
+    color: white;
+    margin-top: .5rem;
+    cursor: pointer;
 }
