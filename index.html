@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <!-- estilos propios  -->
     <link rel="stylesheet" href="styles.css">
     <title>Validar Formulario de Registro</title>
@@ -10,26 +11,48 @@
 <body>
     <h1>Formulario de Registro</h1>
     <!-- creacion del formulario -->
-    <form action="#" class="form-register">
+    <form action="#" class="formulario" id="Formulario" method="POST" onsubmit="return validar()" >
         <div class="inputs-wrap">
-            <input type="text" name="" placeholder="Rut" id="Rut">
-            <input type="text" name="" placeholder="Nombres" id="Nombre">
-            <input type="text" name="" placeholder="Apellidos" id="Apellido">
-            <input type="text" name="" placeholder="Edad" id="Edad">
-            <input type="email" name="" placeholder="Correo" id="Correo">
+            <!-- Entrada de Rut  -->
+            <input type="text" name="rut" placeholder="Rut" id="Rut"    >
+            <!-- Entrada de nombre  -->
+            <input type="text" name="nombres" placeholder="Nombres" id="Nombre">
+            <!-- Entrada de apellidos -->
+            <input type="text" name="apellidos" placeholder="Apellidos" id="Apellido">
+            <!-- Entradade edad -->
+            <input type="text" name="edad" placeholder="Edad" id="Edad">
+            <!-- Entrada de correo -->
+            <input type="email" name="correo" placeholder="Correo" id="Correo">
+            <!-- Entrada de seleccion  -->
             <select name="select1" id="Select">
                 <option value="disabled select">seleccione una especialidad</option>
                 <option value="dental">DENTAL</option>
                 <option value="traumatologia">TRAUMATOLOGIA</option>
                 <option value="radiologia">RADIOLOGIA</option>
             </select>
-            <input type="date" name="" id="Fecha">
-            <input type="time" value="" id="Hora">
-            <button type="submit" id="Boton" onclick="return.display()">Reservar</button>
+            <!-- Entrada de fecha -->
+            <input type="text" name="fecha" id="Fecha" placeholder="DD-MM-AAAA">
+            <!-- Entrada de hora -->
+            <select name="select2" id="Hora">
+                <option value="disable select">Seleccione la hora de su consulta</option>
+                <option value="1">07:00</option>
+                <option value="1">07:30</option>
+                <option value="1">08:00</option>
+                <option value="1">08:30</option>
+                <option value="1">09:00</option>
+                <option value="1">09:30</option>
+                <option value="1">10:00</option>
+                <option value="1">10:30</option>
+                <option value="1">11:00</option>
+                <option value="1">11:30</option>
+                <option value="1">12:00</option>
+            </select>
+            <button type="submit" id="Enviar" value="ENVIAR">Reservar</button>
 
         </div>
     </form>
 
     <script src="formulario.js"></script>
+    
 </body>
 </html>

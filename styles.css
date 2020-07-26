@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    text-align: center;
     box-sizing: border-box;
     background-image: url('background.jpg');
     background-repeat: no-repeat;
@@ -25,7 +26,7 @@ h1{
     color: white;
 }
 
-.form-register .inputs-wrap{
+.formulario .inputs-wrap{
     display: flex;
     flex-direction: column;
     width: 25rem;
@@ -33,28 +34,39 @@ h1{
     
 }
 
-.form-register .inputs-wrap input, #Select {
+.formulario .inputs-wrap input {
     padding: .6rem 0;
     margin: .4rem 0;
     border-radius: .4rem;
     font-size: 1.3em;
     text-align: center;
+    width: 100%;
+}
+#Hora, #Select {
+    padding: .6rem 0;
+    margin: .4rem 0;
+    border-radius: .4rem;
+    font-size: .8em;
+    text-align: center;
+    width: 100%;
 }
  
 
-#Boton {
+#Enviar {
     font-size: .8em;
     font-weight: bolder;
-    padding: .3rem 0;
+    padding: .5rem 0;
     border-radius: .5rem;
     background-color: rgb(171, 226, 221);
+    width: 100%;
+    
 }
 
 
-#Boton:hover {
+#Enviar:hover {
     font-size: 1em;
     background-color: #3cb9cf4b;
-    padding: .5rem 0;
+    padding: .8rem 0;
     color: white;
     margin-top: .5rem;
     cursor: pointer;
