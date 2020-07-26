@@ -34,25 +34,26 @@ h1{
     
 }
 
+
 .formulario .inputs-wrap input {
     padding: .6rem 0;
     margin: .4rem 0;
     border-radius: .4rem;
     font-size: 1.3em;
     text-align: center;
-    width: 100%;
+     width: 100%; 
 }
-#Hora, #Select {
+#hora, #select {
     padding: .6rem 0;
     margin: .4rem 0;
     border-radius: .4rem;
     font-size: .8em;
     text-align: center;
-    width: 100%;
+     width: 100%; 
 }
  
 
-#Enviar {
+#enviar {
     font-size: .8em;
     font-weight: bolder;
     padding: .5rem 0;
@@ -63,11 +64,23 @@ h1{
 }
 
 
-#Enviar:hover {
+#enviar:hover {
     font-size: 1em;
     background-color: #3cb9cf4b;
     padding: .8rem 0;
     color: white;
     margin-top: .5rem;
     cursor: pointer;
+}
+
+/* mensaje de finalizacion */
+
+.mensaje {
+    width: 25rem;
+    height: 10rem;
+    color: white;
+    text-align: center;
+    margin-top: 1rem;
+    display: none;
+
 }

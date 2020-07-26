@@ -11,29 +11,29 @@
 <body>
     <h1>Formulario de Registro</h1>
     <!-- creacion del formulario -->
-    <form action="#" class="formulario" id="Formulario" method="POST" onsubmit="return validar()" >
+    <form action="#" class="formulario" id="formulario" method="POST" onsubmit="return validar()" >
         <div class="inputs-wrap">
             <!-- Entrada de Rut  -->
-            <input type="text" name="rut" placeholder="Rut" id="Rut"    >
+            <input type="text" name="rut" placeholder="Rut" id="rut"    >
             <!-- Entrada de nombre  -->
-            <input type="text" name="nombres" placeholder="Nombres" id="Nombre">
+            <input type="text" name="nombre" placeholder="Nombres" id="nombre">
             <!-- Entrada de apellidos -->
-            <input type="text" name="apellidos" placeholder="Apellidos" id="Apellido">
+            <input type="text" name="apellido" placeholder="Apellidos" id="apellido">
             <!-- Entradade edad -->
-            <input type="text" name="edad" placeholder="Edad" id="Edad">
+            <input type="text" name="edad" placeholder="Edad" id="edad">
             <!-- Entrada de correo -->
-            <input type="email" name="correo" placeholder="Correo" id="Correo">
+            <input type="email" name="correo" placeholder="correo@correo.com" id="correo">
             <!-- Entrada de seleccion  -->
-            <select name="select1" id="Select">
+            <select name="select1" id="select">
                 <option value="disabled select">seleccione una especialidad</option>
                 <option value="dental">DENTAL</option>
                 <option value="traumatologia">TRAUMATOLOGIA</option>
                 <option value="radiologia">RADIOLOGIA</option>
             </select>
             <!-- Entrada de fecha -->
-            <input type="text" name="fecha" id="Fecha" placeholder="DD-MM-AAAA">
+            <input type="text" name="fecha" id="fecha" placeholder="DD-MM-AAAA">
             <!-- Entrada de hora -->
-            <select name="select2" id="Hora">
+            <select name="select2" id="hora">
                 <option value="disable select">Seleccione la hora de su consulta</option>
                 <option value="1">07:00</option>
                 <option value="1">07:30</option>
@@ -47,7 +47,10 @@
                 <option value="1">11:30</option>
                 <option value="1">12:00</option>
             </select>
-            <button type="submit" id="Enviar" value="ENVIAR">Reservar</button>
+            <button type="submit" id="enviar" value="ENVIAR">Reservar</button>
+            <div class="mensaje">
+                <p id="mensaje">pwppwpsppspdp paspp spdpsapdpad sapdsapdapd</p> 
+            </div>
 
         </div>
     </form>
