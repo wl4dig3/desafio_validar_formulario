@@ -75,12 +75,17 @@ h1{
 
 /* mensaje de finalizacion */
 
-.mensaje {
+.caja  {
     width: 25rem;
-    height: 10rem;
+    height: 5rem;
     color: white;
     text-align: center;
-    margin-top: 1rem;
-    display: none;
+    margin-top: .2rem;
+    padding: .6rem;
+    border-radius: .6rem;
+    
 
+}
+.azul {
+    background-color: rgb(41, 36, 92);
 }

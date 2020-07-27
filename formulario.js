@@ -82,13 +82,23 @@ function validar() {
         return false
     }
     else {
-        alert('Gracias por completar todo los datos Sr(a) ');
-        return false
+        // alert('Gracias por completar todo los datos Sr(a) ');
+        imprimir();
+        
+        
+        return false;
     }
 
 
     // funcion para imprimir el texto 
     function imprimir(){
-        
+    let caja = document.createElement('div');
+    let contenido = document.createTextNode(`Estimado(a) ${nombre} ${apellido} y su Rut: ${rut}, su hora para ${select} ha sido reservada para el día ${fecha} a las ${hora}. <br> Además, se le envió un mensaje a su correo ${correo} con el detalle de su cita.`);
+    caja.appendChild(contenido);
+    caja.setAttribute('class', 'caja azul');
+    let contenedor = document.getElementById('contenedor');
+    contenedor.appendChild(caja);
     }
+
+    
 }
