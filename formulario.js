@@ -93,7 +93,7 @@ function validar() {
     // funcion para imprimir el texto 
     function imprimir(){
     let caja = document.createElement('div');
-    let contenido = document.createTextNode(`Estimado(a) ${nombre} ${apellido} y su Rut: ${rut}, su hora para ${select} ha sido reservada para el día ${fecha} a las ${hora}. <br> Además, se le envió un mensaje a su correo ${correo} con el detalle de su cita. Gracias por preferirnos`);
+    let contenido = document.createTextNode(`Estimado(a) ${nombre} ${apellido} y su Rut: ${rut}, su hora para ${select} ha sido reservada para el día ${fecha} a las ${hora}. Además, se le envió un mensaje a su correo ${correo} con el detalle de su cita. Gracias por preferirnos`);
     caja.appendChild(contenido);
     caja.setAttribute('class', 'caja azul');
     let contenedor = document.getElementById('contenedor');
